@@ -1,0 +1,85 @@
+/* entire container, keeps perspective */
+.flip-container {
+	perspective: 1000px;
+}
+	/* flip the pane when hovered */
+	.flip-container:hover .flipper, .flip-container.hover .flipper {
+		transform: rotateY(180deg);
+	}
+
+.flip-container, .front-cake, .back-cake {
+	width: 270px;
+	height: 270px;
+}
+.list li{
+	float: right;
+	padding: 10px;
+  display: inline;
+  list-style-type:none;
+}
+
+
+/* flip speed goes here */
+.flipper {
+	transition: 0.6s;
+	transform-style: preserve-3d;
+	position: relative;
+
+}
+
+/* hide back of pane during swap */
+.front-cake, .back-cake {
+	backface-visibility: hidden;
+	background: #f4e6b7 ;width:270px; height:270px;
+	position: absolute;
+	float:right;
+	top: 0;
+	left: 0;
+}
+
+.listitem li
+{
+	padding: 10px;
+}
+
+
+/* front pane, placed above back */
+.front-cake {
+	z-index: 2;
+	/* for firefox 31 */
+	transform: rotateY(0deg);
+}
+
+.front-cake img
+{
+	width:270px;
+	height:270px;
+}
+.back-cake img
+{
+	width:270px;
+	height:270px;
+}
+
+
+.back-cake h1
+{
+	font-size:18px;
+	text-align: center;
+}
+.back-cake h2
+{
+	font-size:17px;
+	text-align: center;
+}
+
+.back-cake ul
+{
+	font-size:16px;
+	text-align: left;
+}
+
+/* back, initially hidden pane */
+.back-cake {
+	transform: rotateY(180deg);
+}

@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Cake Taster</title>
+    <meta name="ROBOTS" content="NOINDEX, NOFOLLOW">
+    <meta name="author" content="">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <!-- Mobile Specific Metas-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!-- Favicons-->
+    <link rel="shortcut icon" href="images/favicon.png">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+
+    <link href="Css/bootstrap/bootstrap.min.css" rel="stylesheet" />
+    <link href="Css/fontawesome/font-awesome.css" rel="stylesheet" />
+    <link href="Scripts/owl-carousel/owl.carousel.css" rel="stylesheet" />
+    <link href="Scripts/owl-carousel/owl.theme.css" rel="stylesheet" />
+    <link href="Scripts/owl-carousel/owl.transitions.css" rel="stylesheet" />
+    <link href="Css/magnific-popup.css" rel="stylesheet" />
+
+    <link href="Css/animate.css" type="text/css" rel="stylesheet">
+    <link href="Css/style.css" type="text/css" rel="stylesheet">
+    <link href="Css/stickycontainer.css" type="text/css" rel="stylesheet">
+    <link href="Css/cart.css" type="text/css" rel="stylesheet">
+    <link href="Css/shopping.css" type="text/css" rel="stylesheet">
+    <link href="Css/menu-shake.css" type="text/css" rel="stylesheet">
+    <link href="Css/Titleanimation.css" type="text/css" rel="stylesheet">
+
+    <style>
+        .product-png {
+            position: relative;
+            top: 380px;
+            width: 160px;
+            height: 100px;
+            left: 910px;
+            cursor: pointer;
+        }
+
+            .product-png:hover {
+                /* Start the shake animation and make the animation last for 0.5 seconds */
+                animation: shake 0.5s;
+                /* When the animation is finished, start again */
+                animation-iteration-count: infinite;
+            }
+
+        @keyframes shake {
+            0% {
+                transform: translate(1px, 1px) rotate(0deg);
+            }
+
+            10% {
+                transform: translate(-1px, -2px) rotate(-1deg);
+            }
+
+            20% {
+                transform: translate(-3px, 0px) rotate(1deg);
+            }
+
+            30% {
+                transform: translate(3px, 2px) rotate(0deg);
+            }
+
+            40% {
+                transform: translate(1px, -1px) rotate(1deg);
+            }
+
+            50% {
+                transform: translate(-1px, 2px) rotate(-1deg);
+            }
+
+            60% {
+                transform: translate(-3px, 1px) rotate(0deg);
+            }
+
+            70% {
+                transform: translate(3px, 1px) rotate(-1deg);
+            }
+
+            80% {
+                transform: translate(-1px, -1px) rotate(1deg);
+            }
+
+            90% {
+                transform: translate(1px, 2px) rotate(0deg);
+            }
+
+            100% {
+                transform: translate(1px, -2px) rotate(-1deg);
+            }
+        }
+
+        .cake-png {
+            position: relative;
+            top: 280px;
+            left: 1080px;
+            width: 160px;
+            height: 100px;
+        }
+
+            .cake-png:hover {
+                /* Start the shake animation and make the animation last for 0.5 seconds */
+                animation: shake 0.5s;
+                /* When the animation is finished, start again */
+                animation-iteration-count: infinite;
+            }
+
+        @keyframes shake {
+            0% {
+                transform: translate(1px, 1px) rotate(0deg);
+            }
+
+            10% {
+                transform: translate(-1px, -2px) rotate(-1deg);
+            }
+
+            20% {
+                transform: translate(-3px, 0px) rotate(1deg);
+            }
+
+            30% {
+                transform: translate(3px, 2px) rotate(0deg);
+            }
+
+            40% {
+                transform: translate(1px, -1px) rotate(1deg);
+            }
+
+            50% {
+                transform: translate(-1px, 2px) rotate(-1deg);
+            }
+
+            60% {
+                transform: translate(-3px, 1px) rotate(0deg);
+            }
+
+            70% {
+                transform: translate(3px, 1px) rotate(-1deg);
+            }
+
+            80% {
+                transform: translate(-1px, -1px) rotate(1deg);
+            }
+
+            90% {
+                transform: translate(1px, 2px) rotate(0deg);
+            }
+
+            100% {
+                transform: translate(1px, -2px) rotate(-1deg);
+            }
+        }
+
+        .offers-png {
+            position: relative;
+            top: 125px;
+            left: 180px;
+            width: 160px;
+            height: 100px;
+        }
+
+            .offers-png:hover {
+                /* Start the shake animation and make the animation last for 0.5 seconds */
+                animation: shake 0.5s;
+                /* When the animation is finished, start again */
+                animation-iteration-count: infinite;
+            }
+
+        @keyframes shake {
+            0% {
+                transform: translate(1px, 1px) rotate(0deg);
+            }
+
+            10% {
+                transform: translate(-1px, -2px) rotate(-1deg);
+            }
+
+            20% {
+                transform: translate(-3px, 0px) rotate(1deg);
+            }
+
+            30% {
+                transform: translate(3px, 2px) rotate(0deg);
+            }
+
+            40% {
+                transform: translate(1px, -1px) rotate(1deg);
+            }
+
+            50% {
+                transform: translate(-1px, 2px) rotate(-1deg);
+            }
+
+            60% {
+                transform: translate(-3px, 1px) rotate(0deg);
+            }
+
+            70% {
+                transform: translate(3px, 1px) rotate(-1deg);
+            }
+
+            80% {
+                transform: translate(-1px, -1px) rotate(1deg);
+            }
+
+            90% {
+                transform: translate(1px, 2px) rotate(0deg);
+            }
+
+            100% {
+                transform: translate(1px, -2px) rotate(-1deg);
+            }
+        }
+
+        .contact-png {
+            position: relative;
+            top: 220px;
+            left: 0px;
+            width: 160px;
+            height: 100px;
+        }
+
+            .contact-png:hover {
+                /* Start the shake animation and make the animation last for 0.5 seconds */
+                animation: shake 0.5s;
+                /* When the animation is finished, start again */
+                animation-iteration-count: infinite;
+            }
+
+        @keyframes shake {
+            0% {
+                transform: translate(1px, 1px) rotate(0deg);
+            }
+
+            10% {
+                transform: translate(-1px, -2px) rotate(-1deg);
+            }
+
+            20% {
+                transform: translate(-3px, 0px) rotate(1deg);
+            }
+
+            30% {
+                transform: translate(3px, 2px) rotate(0deg);
+            }
+
+            40% {
+                transform: translate(1px, -1px) rotate(1deg);
+            }
+
+            50% {
+                transform: translate(-1px, 2px) rotate(-1deg);
+            }
+
+            60% {
+                transform: translate(-3px, 1px) rotate(0deg);
+            }
+
+            70% {
+                transform: translate(3px, 1px) rotate(-1deg);
+            }
+
+            80% {
+                transform: translate(-1px, -1px) rotate(1deg);
+            }
+
+            90% {
+                transform: translate(1px, 2px) rotate(0deg);
+            }
+
+            100% {
+                transform: translate(1px, -2px) rotate(-1deg);
+            }
+        }
+
+        .plate-png {
+            position: relative;
+            top: 500px;
+            height: 50px;
+            margin: 20px;
+            width: 150px;
+            left: 880px;
+        }
+
+        .plate-left-png {
+            position: relative;
+            top: 550px;
+            height: 50px;
+            margin: 20px;
+            width: 150px;
+            right: 400px;
+        }
+    </style>
+
+    <script src="Scripts/angular.js"></script>
+    <script src="Scripts/angular-route.js"></script>
+
+    <script type="text/javascript" src="Scripts/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="Scripts/bootstrap.min.js"></script>
+    <script type="text/javascript" src="Scripts/owl-carousel/owl.carousel.js"></script>
+    <script type="text/javascript" src="Scripts/jquery.flexslider-min.js"></script>
+    <script type="text/javascript" src="Scripts/jquery.bxslider.min.js"></script>
+    <script type="text/javascript" src="Scripts/jquery.magnific-popup.min.js"></script>
+    <script type="text/javascript" src="Scripts/easing.js"></script>
+    <script type="text/javascript" src="Scripts/jquery.parallax-1.1.3.js"></script>
+    <script type="text/javascript" src="Scripts/jquery.sticky.js"></script>
+    <script type="text/javascript" src="Scripts/jquery.mixitup.min.js"></script>
+    <script type="text/javascript" src="Scripts/wow.min.js"></script>
+    <script type="text/javascript" src="Scripts/custom.js"></script>
+
+    <script src="app.js"></script>
+    <script src="Contact/ContactController.js"></script>
+    <script src="Home/HomeController.js"></script>
+    <script src="Login/LoginController.js"></script>
+    <script src="Products/ProductsController.js"></script>
+    <script src="Cakes/CakesController.js"></script>
+</head>
+
+<body ng-app="myApp">
+    <div id="pageloader">&apos;<img src="images/progress.gif " alt="loader" align='center'></div>
+    <section id="home">
+        <div class="slider-overlay"></div>
+        <div class="homeslider flexslider">
+            <ul class="slides">
+                <li class="slide2 bg"></li>
+            </ul>
+        </div>
+
+        <div class="tb">
+   
+		
+
+            <img class='plate-png' src='images/plate.png'>
+            <img class='plate-png' src='images/plate.png'>
+            <img class='plate-left-png' src='images/plate.png'>
+            <img class='plate-left-png' src='images/plate.png'>
+
+            <div class="page-scroll scroll"><a href="#products"><img class="product-png" src="images/Menu/products.png"></a></div>
+            <div class="page-scroll scroll"><a href="#cakes"><img class="cake-png" src="images/Menu/Cakes.png"></a></div>
+            <div class="page-scroll scroll"><a href="#contact"><img class="contact-png" src="images/Menu/AboutUs.png"></a></div>
+            <div class="page-scroll scroll"><a href="#cakes"><img class="offers-png" src="images/Menu/offers.png"></a></div>
+	<div class="sp-container">
+			<div class="sp-content">
+			<h2 class="frame-5">
+			<span>THE</span>
+			<span>FALCON</span>
+			<span>HAS</span>
+			<span>ARRIVED</span>
+	<h2 class="frame-6">CZARIN</h2>
+
+		</h2>
+</div>
+</div>
+        </div>
+
+
+        <div class="page-scroll scroll">
+            <a href="#contact"></a>
+            <div class="page-scroll scroll">
+                <a href="#cakes"></a>
+                <div class="page-scroll scroll">
+                    <a href="#cakes"></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="tb">
+        <div class="tb-cell">
+            <div class="slide-text"></div>
+        </div>
+    </div>
+
+
+
+    <header id="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#main-menu"><span class="sr-only">Toggle navigation</span><span class="fa fa-bars"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+                    <div class="clear-toggle"></div>
+                    <div class="collapse scroll navbar-right" id="main-menu">
+                        <ul class="nav">
+                            <li class="active"><a href="#Home">Home</a></li>
+                            <li><a href="#Login">Login</a></li>
+                            <li><a href="#Products">Products</a></li>
+                            <li><a href="#Cakes">Cakes</a></li>
+                            <li><a href="#Contact">Contact</a></li>
+                        </ul>
+                    </div>
+                    <!-- End main-menu-->
+                </div>
+            </div>
+        </div>
+
+
+
+    </header>
+
+
+
+
+
+
+    <div ng-view=""></div>
+
+    <section class="section parallax" id="cart">
+        <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js"></script>
+        <script>
+        WebFont.load({
+            google: {
+                families: ["Cookie:regular"]
+            }
+        });
+        </script>
+        <div class='cartheader'>
+            <h1>Your Shopping cart is Empty</h1>
+            <div class="page-scroll scroll front back"><a href=#products><img src="Images/cart/cupcake.png" height="105px;" width="50px;"></a></div>
+            <img class='biscuit' src="images/cart/biscuit.png" height="405px;" width="250px;">
+            <h2> "Get rid of all your heistation, its time  <br>for you to seize the day" </h2>
+            <h3>Check Our Delicious<h3>
+        </div>
+    </section>
+
+
+    <div class="sticky-container">
+        <ul class="sticky">
+            <li>
+                <img src="images/sticky/user.png" width="32" height="32">
+                <p><a href="https://www.facebook.com/codexworld" target="_blank">Hi Jefferson</a></p>
+            </li>
+            <li>
+                <img src="images/sticky/cart.png" width="32" height="32">
+                <p><a href="#cart"><div class="page-scroll scroll">Check Cart</a></p>
+            </li>
+            <li>
+                <img src="images/sticky/settings.png" width="32" height="32">
+                <p><a href="https://plus.google.com/codexworld" target="_blank">Settings</a></p>
+            </li>
+            <li>
+                <img src="images/sticky/logout.png" width="32" height="32">
+                <p><a href="https://www.linkedin.com/company/codexworld" target="_blank">Logout</a></p>
+            </li>
+        </ul>
+    </div>
+    <!-- start text slider-->
+    <div class="tb">
+        <div class="tb-cell">
+            <div class="slide-text"></div>
+        </div>
+    </div>
+
+
+    <footer>
+        <div class="container wow zoomIn" data-wow-duration="700ms" data-wow-delay="500ms">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <!-- Start footer social-->
+                    <ul class="list-inline footer-social">
+                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa fa-vimeo-square"></i></a></li>
+                        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fa fa-behance"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+                    </ul>
+                    <!-- End footer social-->
+                    <!-- footer copyright text-->
+                    <p>Copyright &copy; 2017 All reserved</p>
+                    <!-- end of the footer copyright text-->
+                </div>
+            </div>
+            <!-- /.row-->
+        </div>
+        <!-- /.container-->
+    </footer>
+    <!-- End footer--><a class="scrollup" href="#"><i class="fa fa-chevron-up"> </i></a>
+</body>
+</html>

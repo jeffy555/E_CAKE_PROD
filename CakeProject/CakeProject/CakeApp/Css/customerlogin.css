@@ -1,0 +1,206 @@
+body
+{	
+padding:10px;
+margin: 0 auto;
+background:url(../images/CustomerPage/bg.jpg);	
+background-size: cover;
+}	
+
+.loginbody
+{
+	position:absolute;
+	bottom:200px;
+	left:600px;
+	font-size:20px;
+	font-family:cookie;
+	
+}
+.logintitle
+{
+	letter-spacing:3px;
+	word-spacing:4px;
+	position:absolute;
+	bottom:495px;
+	left:600px;
+	font-size:32px;
+	font-family:cookie;
+	
+}
+.loginbody p
+{
+	margin-bottom:1px;
+	position:relative;
+	right:100px;
+	bottom:70px;
+}
+.loginbody input[type='text'],
+.loginbody input[type='password']
+{
+	border: 0px none;
+	outline:0px none;
+	border-bottom: 2px solid black;
+	position:relative;
+	bottom:100px;
+	right:10px;
+	width:200px;
+	font-size:22px;
+	font-family: Cookie;
+}
+
+.logincenter
+{
+	transform: translate(-50%, -50%);
+}
+
+.loginlink
+{
+	
+	text-decoration:none;
+	text-transform:uppercase;
+	transform-style:preserve3d;
+	position:relative;
+	left:150px;	
+	padding:10px 10px;
+	bottom:50px;
+	font-size:20px;
+	font-family:cookie;
+	cursor:pointer;
+	transition:200ms;
+	
+}
+.loginlink:before
+{
+	content: attr(title);
+	background:#87CEFA;
+	position:absolute;
+	color:#fff;
+	padding:10px 10px;
+	border: 1px solid #000;
+	transition:.5s;
+	transform-origin: right;
+	transform: translateX(-100%) rotateY(90deg);
+}
+.loginlink:after
+{
+	content: attr(title);
+	background:#ffdead;
+	position:absolute;
+	color:black;
+	padding:10px 10px;
+	border: 2px solid #000;
+	transition:.5s;
+	transform-origin: left;
+	transform: translateX(0) rotateY(0deg);
+}
+
+.loginlink:hover:before
+{
+	transform: translateX(0) rotateY(0deg);
+	
+}
+.loginlink:hover:after
+{
+	transform: translateX(100%) rotateY(90deg);
+}
+
+button
+
+
+.loginbody .loginpassword
+{
+	position: relative;
+	bottom:100px;
+	left:200px;
+	color: white;
+	font-style: none;
+	font-family: cookie;
+	font-size: 23px;
+	color:black;
+	
+}
+.loginbody .loginpassword:hover
+{
+color:#87CEFA;
+}
+
+
+.button
+{
+	position:relative;
+	top:10px;
+	left:180px;
+	transform: translate(-50%,-50%);
+	background:#87CEFA;
+	color:black;
+	width:100px;
+	height:50px;
+	font-size:18px;
+	border-radius: 4px;
+	transition:	 .6s;
+	overflow:hidden;
+
+}
+
+.button:focus
+{
+	outline:none;
+}
+
+.button:before
+{
+	content:'';
+	display:block;
+	position:absoulte;
+	background: rgba(255,255,255,.5);
+	width:60px;
+	height:100px;
+	left:0;
+	right:0;
+	opacity: .5s;
+	filter: blur(30px);
+	transform: translateX(-130px) skew(-15deg)	
+	
+}
+
+
+.button:after
+{
+	content:'';
+	display:block;
+	position:absoulte;
+	background: rgba(255,255,255,.2);
+	width:30px;
+	height:10px;
+	left:0;
+	right:0;
+	opacity: 0;
+	filter: blur(30px);
+	transform: translateX(-100px) scaleX(-15deg)	
+	
+}
+
+.button:hover
+{
+	background:#ffdead;
+	cursor:pointer;	
+}
+
+.button:hover:before
+
+{
+	transform: translateX(300px) skew(-15deg);
+	opacity: .6;
+	transition: .7s;
+	
+	
+}
+
+.button:hover:after
+
+{
+	transform: translateX(300px) skew(-15deg);
+	opacity: .6;
+	transition: .7s;
+	
+	
+}
