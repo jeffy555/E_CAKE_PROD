@@ -1,21 +1,8 @@
 
-.sp-content {
-	position: relative;
-	
-	left: 500px;
-	bottom: 300px;
-	z-index: 1000;
-}
 .sp-container h2 {
-	position: absolute;
-	top: 50%;
+	
 	line-height: 100px;
-	height: 90px;
-	left:50%;
-	margin-top: -50px;
 	font-size: 30px;
-	width: 50%;
-	text-align: center;
 	color: transparent;
 	-webkit-animation: blurFadeInOut 3s ease-in backwards;
 	-moz-animation: blurFadeInOut 3s ease-in backwards;
@@ -32,7 +19,6 @@
 	-moz-animation: none;
 	-ms-animation: none;
 	animation: none;
-position:relative;
 top:100px;
 	color: transparent;
 	text-shadow: 0px 0px 1px #fff;

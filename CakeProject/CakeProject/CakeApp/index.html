@@ -1,481 +1,582 @@
-<!DOCTYPE html>
-<html>
+﻿<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <title>Cake Taster</title>
-    <meta name="ROBOTS" content="NOINDEX, NOFOLLOW">
-    <meta name="author" content="">
-    <meta name="keywords" content="">
-    <meta name="description" content="">
-    <!-- Mobile Specific Metas-->
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <!-- Favicons-->
-    <link rel="shortcut icon" href="images/favicon.png">
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<title>Creative - Start Bootstrap Theme</title>
+	<!-- Bootstrap core CSS -->
+	<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<!-- Custom fonts for this template -->
+	<!--Login page alone-->
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="login/vendor/bootstrap/css/bootstrap.min.css">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="login/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="login/fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="login/vendor/animate/animate.css">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="login/vendor/css-hamburgers/hamburgers.min.css">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="login/vendor/select2/select2.min.css">
 
 
-    <link href="Css/bootstrap/bootstrap.min.css" rel="stylesheet" />
-    <link href="Css/fontawesome/font-awesome.css" rel="stylesheet" />
-    <link href="Scripts/owl-carousel/owl.carousel.css" rel="stylesheet" />
-    <link href="Scripts/owl-carousel/owl.theme.css" rel="stylesheet" />
-    <link href="Scripts/owl-carousel/owl.transitions.css" rel="stylesheet" />
-    <link href="Css/magnific-popup.css" rel="stylesheet" />
+	<!--===============================================================================================-->
+	<script src="login/vendor/jquery/jquery-3.2.1.min.js"></script>
+	<!--===============================================================================================-->
+	<script src="login/vendor/bootstrap/js/popper.js"></script>
+	<script src="login/vendor/bootstrap/js/bootstrap.min.js"></script>
+	<!--===============================================================================================-->
+	<script src="login/vendor/select2/select2.min.js"></script>
+	<!--===============================================================================================-->
+	<script src="login/js/main.js"></script>
 
-    <link href="Css/animate.css" type="text/css" rel="stylesheet">
-    <link href="Css/style.css" type="text/css" rel="stylesheet">
-    <link href="Css/stickycontainer.css" type="text/css" rel="stylesheet">
-    <link href="Css/cart.css" type="text/css" rel="stylesheet">
-    <link href="Css/shopping.css" type="text/css" rel="stylesheet">
-    <link href="Css/menu-shake.css" type="text/css" rel="stylesheet">
-    <link href="Css/Titleanimation.css" type="text/css" rel="stylesheet">
-
-    <style>
-        .product-png {
-            position: relative;
-            top: 380px;
-            width: 160px;
-            height: 100px;
-            left: 910px;
-            cursor: pointer;
-        }
-
-            .product-png:hover {
-                /* Start the shake animation and make the animation last for 0.5 seconds */
-                animation: shake 0.5s;
-                /* When the animation is finished, start again */
-                animation-iteration-count: infinite;
-            }
-
-        @keyframes shake {
-            0% {
-                transform: translate(1px, 1px) rotate(0deg);
-            }
-
-            10% {
-                transform: translate(-1px, -2px) rotate(-1deg);
-            }
-
-            20% {
-                transform: translate(-3px, 0px) rotate(1deg);
-            }
-
-            30% {
-                transform: translate(3px, 2px) rotate(0deg);
-            }
-
-            40% {
-                transform: translate(1px, -1px) rotate(1deg);
-            }
-
-            50% {
-                transform: translate(-1px, 2px) rotate(-1deg);
-            }
-
-            60% {
-                transform: translate(-3px, 1px) rotate(0deg);
-            }
-
-            70% {
-                transform: translate(3px, 1px) rotate(-1deg);
-            }
-
-            80% {
-                transform: translate(-1px, -1px) rotate(1deg);
-            }
-
-            90% {
-                transform: translate(1px, 2px) rotate(0deg);
-            }
-
-            100% {
-                transform: translate(1px, -2px) rotate(-1deg);
-            }
-        }
-
-        .cake-png {
-            position: relative;
-            top: 280px;
-            left: 1080px;
-            width: 160px;
-            height: 100px;
-        }
-
-            .cake-png:hover {
-                /* Start the shake animation and make the animation last for 0.5 seconds */
-                animation: shake 0.5s;
-                /* When the animation is finished, start again */
-                animation-iteration-count: infinite;
-            }
-
-        @keyframes shake {
-            0% {
-                transform: translate(1px, 1px) rotate(0deg);
-            }
-
-            10% {
-                transform: translate(-1px, -2px) rotate(-1deg);
-            }
-
-            20% {
-                transform: translate(-3px, 0px) rotate(1deg);
-            }
-
-            30% {
-                transform: translate(3px, 2px) rotate(0deg);
-            }
-
-            40% {
-                transform: translate(1px, -1px) rotate(1deg);
-            }
-
-            50% {
-                transform: translate(-1px, 2px) rotate(-1deg);
-            }
-
-            60% {
-                transform: translate(-3px, 1px) rotate(0deg);
-            }
-
-            70% {
-                transform: translate(3px, 1px) rotate(-1deg);
-            }
-
-            80% {
-                transform: translate(-1px, -1px) rotate(1deg);
-            }
-
-            90% {
-                transform: translate(1px, 2px) rotate(0deg);
-            }
-
-            100% {
-                transform: translate(1px, -2px) rotate(-1deg);
-            }
-        }
-
-        .offers-png {
-            position: relative;
-            top: 125px;
-            left: 180px;
-            width: 160px;
-            height: 100px;
-        }
-
-            .offers-png:hover {
-                /* Start the shake animation and make the animation last for 0.5 seconds */
-                animation: shake 0.5s;
-                /* When the animation is finished, start again */
-                animation-iteration-count: infinite;
-            }
-
-        @keyframes shake {
-            0% {
-                transform: translate(1px, 1px) rotate(0deg);
-            }
-
-            10% {
-                transform: translate(-1px, -2px) rotate(-1deg);
-            }
-
-            20% {
-                transform: translate(-3px, 0px) rotate(1deg);
-            }
-
-            30% {
-                transform: translate(3px, 2px) rotate(0deg);
-            }
-
-            40% {
-                transform: translate(1px, -1px) rotate(1deg);
-            }
-
-            50% {
-                transform: translate(-1px, 2px) rotate(-1deg);
-            }
-
-            60% {
-                transform: translate(-3px, 1px) rotate(0deg);
-            }
-
-            70% {
-                transform: translate(3px, 1px) rotate(-1deg);
-            }
-
-            80% {
-                transform: translate(-1px, -1px) rotate(1deg);
-            }
-
-            90% {
-                transform: translate(1px, 2px) rotate(0deg);
-            }
-
-            100% {
-                transform: translate(1px, -2px) rotate(-1deg);
-            }
-        }
-
-        .contact-png {
-            position: relative;
-            top: 220px;
-            left: 0px;
-            width: 160px;
-            height: 100px;
-        }
-
-            .contact-png:hover {
-                /* Start the shake animation and make the animation last for 0.5 seconds */
-                animation: shake 0.5s;
-                /* When the animation is finished, start again */
-                animation-iteration-count: infinite;
-            }
-
-        @keyframes shake {
-            0% {
-                transform: translate(1px, 1px) rotate(0deg);
-            }
-
-            10% {
-                transform: translate(-1px, -2px) rotate(-1deg);
-            }
-
-            20% {
-                transform: translate(-3px, 0px) rotate(1deg);
-            }
-
-            30% {
-                transform: translate(3px, 2px) rotate(0deg);
-            }
-
-            40% {
-                transform: translate(1px, -1px) rotate(1deg);
-            }
-
-            50% {
-                transform: translate(-1px, 2px) rotate(-1deg);
-            }
-
-            60% {
-                transform: translate(-3px, 1px) rotate(0deg);
-            }
-
-            70% {
-                transform: translate(3px, 1px) rotate(-1deg);
-            }
-
-            80% {
-                transform: translate(-1px, -1px) rotate(1deg);
-            }
-
-            90% {
-                transform: translate(1px, 2px) rotate(0deg);
-            }
-
-            100% {
-                transform: translate(1px, -2px) rotate(-1deg);
-            }
-        }
-
-        .plate-png {
-            position: relative;
-            top: 500px;
-            height: 50px;
-            margin: 20px;
-            width: 150px;
-            left: 880px;
-        }
-
-        .plate-left-png {
-            position: relative;
-            top: 550px;
-            height: 50px;
-            margin: 20px;
-            width: 150px;
-            right: 400px;
-        }
-    </style>
-
-    <script src="Scripts/angular.js"></script>
-    <script src="Scripts/angular-route.js"></script>
-
-    <script type="text/javascript" src="Scripts/jquery-1.11.1.min.js"></script>
-    <script type="text/javascript" src="Scripts/bootstrap.min.js"></script>
-    <script type="text/javascript" src="Scripts/owl-carousel/owl.carousel.js"></script>
-    <script type="text/javascript" src="Scripts/jquery.flexslider-min.js"></script>
-    <script type="text/javascript" src="Scripts/jquery.bxslider.min.js"></script>
-    <script type="text/javascript" src="Scripts/jquery.magnific-popup.min.js"></script>
-    <script type="text/javascript" src="Scripts/easing.js"></script>
-    <script type="text/javascript" src="Scripts/jquery.parallax-1.1.3.js"></script>
-    <script type="text/javascript" src="Scripts/jquery.sticky.js"></script>
-    <script type="text/javascript" src="Scripts/jquery.mixitup.min.js"></script>
-    <script type="text/javascript" src="Scripts/wow.min.js"></script>
-    <script type="text/javascript" src="Scripts/custom.js"></script>
-
-    <script src="app.js"></script>
-    <script src="Contact/ContactController.js"></script>
-    <script src="Home/HomeController.js"></script>
-    <script src="Login/LoginController.js"></script>
-    <script src="Products/ProductsController.js"></script>
-    <script src="Cakes/CakesController.js"></script>
+	<!--ENd of login page-->
+	<link rel="stylesheet" href="register/fonts/material-design-iconic-font/css/material-design-iconic-font.min.css">
+	<!--REgister page-->
+	<!--end of reg page-->
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/iconic/css/material-design-iconic-font.min.css">
+	<!-- Plugin CSS -->
+	<link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
+	<!-- Custom styles for this template -->
+	<link href="css/creative.min.css" rel="stylesheet">
+	<link href="css/creative.css" rel="stylesheet">
+	<link href="css/titleanimation.css" rel="stylesheet">
+	<link href="css/menu-shake.css" rel="stylesheet">
 </head>
 
-<body ng-app="myApp">
-    <div id="pageloader">&apos;<img src="images/progress.gif " alt="loader" align='center'></div>
-    <section id="home">
-        <div class="slider-overlay"></div>
-        <div class="homeslider flexslider">
-            <ul class="slides">
-                <li class="slide2 bg"></li>
-            </ul>
-        </div>
 
-        <div class="tb">
-   
+<style>
+	.image_section_name img {
+		margin-left: 230px;
+		margin-top: 450px;
+		display: block;
+	}
+
+	.image_section2 img {
+		margin-left: 0px;
+		margin-top: 0px;
+		display: block;
+	}
+
+
+	@media screen and (max-width:1980px) {
+		.image_section2 img {
+			margin-left: 750px;
+			margin-top: 600px;
+		}
+	}
+
+	@media screen and (max-width:1980px) {
+		.image_section_name img {
+			margin-left: 230px;
+			margin-top: 60px;
+		}
+	}
+
+	@media screen and (max-width:1920px) {
+		.image_section2 img {
+			margin-left: 750px;
+			margin-top: 650px;
+		}
+	}
+
+	@media screen and (max-width:1920px) {
+		.image_section_name img {
+			margin-left: 200px;
+			margin-top: 600px;
+		}
+	}
+
+
+
+	@media screen and (max-width:1030px) {
+		.image_section2 img {
+			margin-left: 500px;
+			margin-top: 900px;
+		}
+	}
+
+	@media screen and (max-width:1030px) {
+		.image_section_name img {
+			margin-left: 50px;
+			margin-top: 850px;
+		}
+	}
+
+
+
+	@media screen and (max-width:800px) {
+		.image_section2 img {
+			margin-left: 370px;
+			margin-top: 700px;
+		}
+	}
+
+	@media screen and (max-width:800px) {
+		.image_section_name img {
+			margin-left: 50px;
+			margin-top: 650px;
+		}
+	}
+
+	@media screen and (max-width:800px) {
+		.image_section_aboutus img {
+			margin-left: 20px;
+			margin-bottom: 100px;
+		}
+	}
+
+
+
+	@media screen and (max-width:600px) {
+		.image_section_name img {
+			margin-left: 20px;
+			margin-top: 500px;
+			display: none;
+		}
+	}
+
+
+	@media screen and (max-width:600px) {
+		.image_section2 img {
+			
+			display: none;
+		}
+	}
+
+	@media screen and (max-width:600px) {
+		.image_section_aboutus img {
 		
-
-            <img class='plate-png' src='images/plate.png'>
-            <img class='plate-png' src='images/plate.png'>
-            <img class='plate-left-png' src='images/plate.png'>
-            <img class='plate-left-png' src='images/plate.png'>
-
-            <div class="page-scroll scroll"><a href="#products"><img class="product-png" src="images/Menu/products.png"></a></div>
-            <div class="page-scroll scroll"><a href="#cakes"><img class="cake-png" src="images/Menu/Cakes.png"></a></div>
-            <div class="page-scroll scroll"><a href="#contact"><img class="contact-png" src="images/Menu/AboutUs.png"></a></div>
-            <div class="page-scroll scroll"><a href="#cakes"><img class="offers-png" src="images/Menu/offers.png"></a></div>
-	<div class="sp-container">
-			<div class="sp-content">
-			<h2 class="frame-5">
-			<span>THE</span>
-			<span>FALCON</span>
-			<span>HAS</span>
-			<span>ARRIVED</span>
-	<h2 class="frame-6">CZARIN</h2>
-
-		</h2>
-</div>
-</div>
-        </div>
+			display: none;
+		}
+	}
+</style>
 
 
-        <div class="page-scroll scroll">
-            <a href="#contact"></a>
-            <div class="page-scroll scroll">
-                <a href="#cakes"></a>
-                <div class="page-scroll scroll">
-                    <a href="#cakes"></a>
-                </div>
-            </div>
-        </div>
-    </section>
+<body id="page-top">
+	<!-- Navigation -->
+	<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+		<div class="container">
+			<a class="navbar-brand js-scroll-trigger" href="#page-top">CZARIN</a>
+			<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarResponsive">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item">
+						<a class="nav-link js-scroll-trigger" href="#login">LOGIN</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link js-scroll-trigger" href="#about">SELL HERE</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link js-scroll-trigger" href="#cakes">DEALS</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link js-scroll-trigger" href="#portfolio">CUSTOMIZE</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link js-scroll-trigger" href="#contact">ABOUT US</a>
+					</li>
+				</ul>
 
-    <div class="tb">
-        <div class="tb-cell">
-            <div class="slide-text"></div>
-        </div>
-    </div>
+	</nav>
+	<header class="masthead text-center text-white d-flex">
+		<div class="container my-auto">
 
-
-
-    <header id="header">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12">
-                    <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#main-menu"><span class="sr-only">Toggle navigation</span><span class="fa fa-bars"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
-                    <div class="clear-toggle"></div>
-                    <div class="collapse scroll navbar-right" id="main-menu">
-                        <ul class="nav">
-                            <li class="active"><a href="#Home">Home</a></li>
-                            <li><a href="#Login">Login</a></li>
-                            <li><a href="#Products">Products</a></li>
-                            <li><a href="#Cakes">Cakes</a></li>
-                            <li><a href="#Contact">Contact</a></li>
-                        </ul>
-                    </div>
-                    <!-- End main-menu-->
-                </div>
-            </div>
-        </div>
+			<div class="row">
 
 
+				<div class="image_section2  col-md-3">
 
-    </header>
+					<img src="img/menu/plate.png">
+				</div>
 
+				<div class="image_section2 col-md-3">
 
+					<img src="img/menu/plate.png">
 
-
-
-
-    <div ng-view=""></div>
-
-    <section class="section parallax" id="cart">
-        <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js"></script>
-        <script>
-        WebFont.load({
-            google: {
-                families: ["Cookie:regular"]
-            }
-        });
-        </script>
-        <div class='cartheader'>
-            <h1>Your Shopping cart is Empty</h1>
-            <div class="page-scroll scroll front back"><a href=#products><img src="Images/cart/cupcake.png" height="105px;" width="50px;"></a></div>
-            <img class='biscuit' src="images/cart/biscuit.png" height="405px;" width="250px;">
-            <h2> "Get rid of all your heistation, its time  <br>for you to seize the day" </h2>
-            <h3>Check Our Delicious<h3>
-        </div>
-    </section>
+				</div>
 
 
-    <div class="sticky-container">
-        <ul class="sticky">
-            <li>
-                <img src="images/sticky/user.png" width="32" height="32">
-                <p><a href="https://www.facebook.com/codexworld" target="_blank">Hi Jefferson</a></p>
-            </li>
-            <li>
-                <img src="images/sticky/cart.png" width="32" height="32">
-                <p><a href="#cart"><div class="page-scroll scroll">Check Cart</a></p>
-            </li>
-            <li>
-                <img src="images/sticky/settings.png" width="32" height="32">
-                <p><a href="https://plus.google.com/codexworld" target="_blank">Settings</a></p>
-            </li>
-            <li>
-                <img src="images/sticky/logout.png" width="32" height="32">
-                <p><a href="https://www.linkedin.com/company/codexworld" target="_blank">Logout</a></p>
-            </li>
-        </ul>
-    </div>
-    <!-- start text slider-->
-    <div class="tb">
-        <div class="tb-cell">
-            <div class="slide-text"></div>
-        </div>
-    </div>
+				<div class="image_section_name col-md-3">
+
+					<a class="nav-link js-scroll-trigger" href="#cakes"> <img class="image_section_name_shake" src="img/menu/cakes.png"></a>
+				</div>
+
+				<div class="image_section_name col-md-3">
+
+					<a class="nav-link js-scroll-trigger" href="#Products"> <img class="image_section_name_shake" src="img/menu/products.png"></a>
+
+				</div>
 
 
-    <footer>
-        <div class="container wow zoomIn" data-wow-duration="700ms" data-wow-delay="500ms">
-            <div class="row">
-                <div class="col-md-12 text-center">
-                    <!-- Start footer social-->
-                    <ul class="list-inline footer-social">
-                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                        <li><a href="#"><i class="fa fa-vimeo-square"></i></a></li>
-                        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                        <li><a href="#"><i class="fa fa-behance"></i></a></li>
-                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                        <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-                    </ul>
-                    <!-- End footer social-->
-                    <!-- footer copyright text-->
-                    <p>Copyright &copy; 2017 All reserved</p>
-                    <!-- end of the footer copyright text-->
-                </div>
-            </div>
-            <!-- /.row-->
-        </div>
-        <!-- /.container-->
-    </footer>
-    <!-- End footer--><a class="scrollup" href="#"><i class="fa fa-chevron-up"> </i></a>
+				<!--<h1 class="text-uppercase">
+					<strong>Your Favorite Source of Free Bootstrap Themes</strong>
+				</h1>-->
+
+			</div>
+
+		</div>
+		</div>
+	</header>
+
+
+	<section id="login">
+
+		<div class="limiter">
+			<div class="container-login100">
+				<div class="wrap-login100 p-t-190 p-b-30">
+					<form class="login100-form validate-form">
+
+
+						<div class="wrap-input100 validate-input m-b-10" data-validate="Username is required">
+							<input class="input100" type="text" name="username" placeholder="Username">
+							<span class="focus-input100"></span>
+							<span class="symbol-input100">
+								<i class="fa fa-user"></i>
+							</span>
+						</div>
+
+						<div class="wrap-input100 validate-input m-b-10" data-validate="Password is required">
+							<input class="input100" type="password" name="pass" placeholder="Password">
+							<span class="focus-input100"></span>
+							<span class="symbol-input100">
+								<i class="fa fa-lock"></i>
+							</span>
+						</div>
+
+						<div class="container-login100-form-btn p-t-10">
+							<div class="logincenter"><a class="loginlink" href="#" title="Login"></a></div>
+						</div>
+						<div class="row">
+							<div class="col-md-3 align-right forgot">
+								<a href="#">Forgot Password/Username?</a>
+
+							</div>
+							<div class="signup">
+								<a class="nav-link js-scroll-trigger" href="#register">New Account</a>
+
+							</div>
+
+
+					</form>
+				</div>
+			</div>
+
+
+	</section>
+
+
+	<section id="register">
+		<div class="loginBox">
+
+			<form>
+
+				<input type="text" name="" placeholder="Username"><i class="fa fa-user"></i>
+
+
+				<input type="email" name="" placeholder="Email"><i class="fa fa-envelope-o" aria-hidden="true"></i>
+
+				
+
+				<input type="tel" id="phone" name=""
+					   placeholder="91-1234567890"
+					   pattern="[0-9]{2}-[0-9]{10}"
+					   required /><i class="fa fa-mobile" aria-hidden="true"></i>
+
+				<input type="password" name="" placeholder="Password"><i class="fa fa-lock"></i>
+
+				<input type="password" name="" placeholder="Confirm Password"><i class="fa fa-lock"></i>
+				<div class="regcenter"><a class="reglink" href="#" title="Register"></a></div>
+
+			</form>
+		</div>
+	</section>
+
+
+	<section class="section parallax" id="facts" style="margin-top:160px;">
+		<!-- /container-->
+	</section>
+
+
+	<section id="Products">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+					<h2 class="section-heading"><span><img src="img/Products/left.png" height="100px;"> PRODUCTS <img src="img/Products/right.png " height="100px;></span></h2>
+					<hr class="my-4">
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-3 col-md-6 text-center">
+					<div class="service-box mt-5 mx-auto">
+						<!--<i class="fas fa-4x fa-gem text-primary mb-3 sr-icon-1"></i>-->
+						<a class="nav-link js-scroll-trigger" href="#desc">
+							<img style="height:100px; width:100px;" src="img/CusLogo/cus1.png">
+						</a>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6 text-center">
+					<div class="service-box mt-5 mx-auto">
+						<!--<i class="fas fa-4x fa-paper-plane text-primary mb-3 sr-icon-2"></i>-->
+						<a class="nav-link js-scroll-trigger" href="#cakes">
+							<img style="height:100px; width:100px;" src="img/CusLogo/cus2.png">
+						</a>
+
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6 text-center">
+					<div class="service-box mt-5 mx-auto">
+						<!--<i class="fas fa-4x fa-code text-primary mb-3 sr-icon-3"></i>-->
+						<a class="nav-link js-scroll-trigger" href="#cakes">
+							<img style="height:100px; width:100px;" src="img/CusLogo/cus3.png">
+						</a>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6 text-center">
+					<div class="service-box mt-5 mx-auto">
+						<!--<i class="fas fa-4x fa-heart text-primary mb-3 sr-icon-4"></i>-->
+						<a class="nav-link js-scroll-trigger" href="#cakes">
+							<img style="height:100px; width:100px;" src="img/CusLogo/cus4.png">
+						</a>
+					</div>
+				</div>
+
+				<div class="col-lg-3 col-md-6 text-center">
+					<div class="service-box mt-5 mx-auto">
+						<!--<i class="fas fa-4x fa-gem text-primary mb-3 sr-icon-1"></i>-->
+						<a class="nav-link js-scroll-trigger" href="#cakes">
+							<img style="height:100px; width:100px;" src="img/CusLogo/cus5.png">
+						</a>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6 text-center">
+					<div class="service-box mt-5 mx-auto">
+						<!--<i class="fas fa-4x fa-paper-plane text-primary mb-3 sr-icon-2"></i>-->
+						<a class="nav-link js-scroll-trigger" href="#cakes">
+							<img style="height:100px; width:100px;" src="img/CusLogo/cus6.png">
+						</a>
+
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6 text-center">
+					<div class="service-box mt-5 mx-auto">
+						<!--<i class="fas fa-4x fa-code text-primary mb-3 sr-icon-3"></i>-->
+						<a class="nav-link js-scroll-trigger" href="#cakes">
+							<img style="height:100px; width:100px;" src="img/CusLogo/cus7.png">
+						</a>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6 text-center">
+					<div class="service-box mt-5 mx-auto">
+						<!--<i class="fas fa-4x fa-heart text-primary mb-3 sr-icon-4"></i>-->
+						<a class="nav-link js-scroll-trigger" href="#cakes">
+							<img style="height:100px; width:100px;" src="img/CusLogo/cus8.png">
+						</a>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</section>
+
+	<section class="section parallax" id="facts2" style="margin-top:160px;">
+		<!-- /container-->
+	</section>
+
+
+
+
+
+
+	<section class="p-0" id="desc">
+		<!--<div class="videoloadsize col-lg-12">
+			<video width="800" height="800" autoplay muted loop id="myVideo">
+				<source src="video/1.mp4" type="video/mp4">
+
+			</video>
+		  
+
+		</div>-->
+		<div class="container">
+			<div class="row">
+
+				<div class="service-box mt-5 mx-auto">
+				   
+					<a class="nav-link js-scroll-trigger" href="#cakes">
+						<img style="height:100px; width:100px;" src="img/CusLogo/cus1.png">
+					</a>
+					<p>We have more than 400 items on our Products List. About 60 of these are seasonal products. Others are generally produced on a daily basis. Some of these are listed here.</br> Besides our regular range of bakery items McRennett provides a range of delicious Wedding Cakes In case you want to know where these products are available, </br>we have listed our retail outlets here. Shortly, we will be able to accept orders online </p>
+				  
+				</div>
+
+
+			
+		</div>
+
+
+
+
+	</section>
+
+
+	<section id="cakes">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+					<h2 class="section-heading"><span><img src="img/Products/left.png" height="100px;"> ITEMS <img src="img/Products/right.png " height="100px;></span></h2>
+					<hr class="my-4">
+				</div>
+			</div>
+		</div>
+
+
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-3 col-md-6 text-center">
+					<div class="nav-item service-box mt-5 mx-auto">
+						<!--<i class="fas fa-4x fa-gem text-primary mb-3 sr-icon-1"></i>-->
+						<!-- front content -->
+						<a class="nav-link js-scroll-trigger"  href="#contact">
+							<img src='img/Items/img1.jpg'>
+
+						</a>
+
+					</div>
+					<div class="row">
+
+						<div class="col-sm-4  col-md-4 col-lg-4  ">
+							<a href=""><img class='shopping-cart' src='img/icon/cart.png'></a>
+						</div>
+						<div class="col-xs-12 col-sm-4  col-md-4 col-lg-4  ">
+							<a href=""><img class='book-cart' src='img/icon/book.png'></a>
+						</div>
+						<div class="col-xs-12 col-sm-4  col-md-4 col-lg-4  ">
+							<a href=''><img class='like-cart' src='img/icon/like.png'></a>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6 text-center">
+					<div class="service-box mt-5 mx-auto">
+						<!--<i class="fas fa-4x fa-paper-plane text-primary mb-3 sr-icon-2"></i>-->
+
+						<a class="nav-link js-scroll-trigger">
+							<img src='img/Items/img2.jpg' alt=''>
+
+						</a>
+
+					</div>
+					<div class="row">
+
+						<div class="col-sm-4  col-md-4 col-lg-4  ">
+							<a href=""><img class='shopping-cart' src='img/icon/cart.png'></a>
+						</div>
+						<div class="col-xs-12 col-sm-4  col-md-4 col-lg-4  ">
+							<a href=""><img class='book-cart' src='img/icon/book.png'></a>
+						</div>
+						<div class="col-xs-12 col-sm-4  col-md-4 col-lg-4  ">
+							<a href=''><img class='like-cart' src='img/icon/like.png'></a>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6 text-center">
+					<div class="service-box mt-5 mx-auto">
+						<a class="nav-link js-scroll-trigger">
+							<img src='img/Items/img3.jpg' alt=''>
+
+						</a>
+
+					</div>
+					<div class="row">
+
+						<div class="col-sm-4  col-md-4 col-lg-4  ">
+							<a href=""><img class='shopping-cart' src='img/icon/cart.png'></a>
+						</div>
+						<div class="col-xs-12 col-sm-4  col-md-4 col-lg-4  ">
+							<a href=""><img class='book-cart' src='img/icon/book.png'></a>
+						</div>
+						<div class="col-xs-12 col-sm-4  col-md-4 col-lg-4  ">
+							<a href=''><img class='like-cart' src='img/icon/like.png'></a>
+						</div>
+					</div>
+				</div> <div class="col-lg-3 col-md-6 text-center">
+					<div class="service-box mt-5 mx-auto">
+						<a class="nav-link js-scroll-trigger">
+							<img src='img/Items/img4.jpg' alt=''>
+
+						</a>
+
+					</div>
+					<div class="row">
+
+						<div class="col-sm-4  col-md-4 col-lg-4  ">
+							<a href=""><img class='shopping-cart' src='img/icon/cart.png'></a>
+						</div>
+						<div class="col-xs-12 col-sm-4  col-md-4 col-lg-4  ">
+							<a href=""><img class='book-cart' src='img/icon/book.png'></a>
+						</div>
+						<div class="col-xs-12 col-sm-4  col-md-4 col-lg-4  ">
+							<a href=''><img class='like-cart' src='img/icon/like.png'></a>
+						</div>
+					</div>
+				</div>
+	</section>
+
+
+
+	<section id="contact">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+					<h2 class="section-heading"><span><img src="img/Products/left.png" height="100px;"> Contact Us <img src="img/Products/right.png " height="100px;></span></h2>
+					<hr class="my-4">
+				</div>
+				
+				<div class="col-lg-8 mx-auto text-center">
+					<h2 class="section-heading">BE A PART OF THE NEXT BIG STEP</h2>
+					<hr class="my-4">
+					<p class="mb-5">Sometimes deliocious moment need delicious customers</p>
+
+				</div>
+
+			</div>
+			<div class="row">
+				<div class="col-lg-4 ml-auto text-center">
+					<i class="fa fa-phone fa-3x mb-3 sr-contact-1"></i>&nbsp;&nbsp;<i class="fa fa-whatsapp fa-3x mb-3 sr-contact-1"></i>
+					<p>91-9962627568</p>
+				</div>
+				<div class="col-lg-4 mr-auto text-center">
+					<i class="fa fa-envelope fa-3x mb-3 sr-contact-1"></i>
+					<p>
+						<a href="mailto:your-email@your-domain.com">contact@czarin.com</a>
+					</p>
+				</div>
+				<!-- <div class="col-md-4"> -->
+				<!-- <img src="img/aboutus/plate.png"> -->
+				<!-- </div> -->
+			</div>
+
+		</div>
+	</section>
+	<!-- Bootstrap core JavaScript -->
+	<script src="vendor/jquery/jquery.min.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+	<!-- Plugin JavaScript -->
+	<script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+	<script src="vendor/scrollreveal/scrollreveal.min.js"></script>
+	<script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+	<!-- Custom scripts for this template -->
+	<script src="js/creative.min.js"></script>
 </body>
 </html>
